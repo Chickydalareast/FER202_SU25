@@ -36,3 +36,329 @@
     transform: rotate(360deg);
   }
 }
+
+.input-group {
+  border: 1px solid #ced4da;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.input-group-text {
+  background-color: #ffffff !important;
+  border: none !important;
+  padding-left: 1.25rem;
+}
+
+.form-control {
+  background-color: #ffffff;
+  border: none !important;
+  box-shadow: none !important;
+  padding-right: 1.25rem;
+}
+
+.form-control::placeholder {
+  color: #888888;
+  opacity: 1;
+}
+
+.form-control:focus {
+  background-color: #ffffff;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: 0;
+}
+
+.input-group:focus-within {
+  border-color: #000000 !important;
+  border-width: 2px !important;
+}
+
+.input-group:focus-within .input-group-text,
+.input-group:focus-within .form-control::placeholder {
+}
+
+.dropdown .dropdown-menu {
+  top: 100% !important;
+  right: 0 !important;
+  left: auto !important;
+  transform: none !important;
+  margin-top: 5px !important;
+}
+
+.dropdown .dropdown-menu:not(.show) {
+  display: none;
+}
+
+.floating-action-button {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #6c757d;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.floating-action-button svg {
+  color: #1a1a1a;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.floating-action-button:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.floating-action-button:hover svg {
+  color: white;
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  min-height: 100vh;
+}
+
+.sidebar-layout {
+  grid-area: sidebar;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 99;
+  width: 100px;
+  min-width: 100px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+}
+
+.header-layout {
+  grid-area: header;
+  background-color: white !important;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+}
+
+.main-content {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  padding-top: calc(20px + 65px);
+}
+
+.content-page-wrapper {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  min-height: calc(100vh - 100px);
+}
+
+footer {
+  grid-area: footer;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.sidebar-header img {
+  margin-right: 0 !important;
+  margin-bottom: 5px;
+}
+
+.sidebar-header span {
+  margin-left: 0 !important;
+  line-height: 1.2;
+  color: #343a40;
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  min-height: 100vh;
+}
+
+.sidebar-layout {
+  grid-area: sidebar;
+  position: sticky;
+  top: 0;
+  height: 0vh;
+  z-index: 99;
+  width: 120px;
+  min-width: 120px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+}
+
+.sidebar-item {
+  color: #343a40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  width: 80px;
+  border-radius: 8px;
+  margin: 5px auto;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.sidebar-item .sidebar-icon {
+  color: #6c757d;
+  font-size: 10px;
+  transition: color 0.2s ease;
+  margin-bottom: 3px;
+}
+
+.sidebar-item .sidebar-text {
+  font-size: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+.sidebar-item:hover .sidebar-icon {
+  color: #000;
+}
+
+.sidebar-item.active {
+  background-color: #e0e0e0;
+  color: #000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-item.active .sidebar-icon {
+  color: #000;
+}
+
+.navbar.header-layout {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  justify-content: space-between;
+}
+
+.navbar .input-group {
+  flex-grow: 1;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .input-group-text,
+.navbar .form-control {
+  background-color: #fff;
+  border: none;
+}
+
+.navbar .input-group-text {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.navbar .form-control {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.text-secondary {
+  color: #495057 !important;
+}
+
+.text-secondary:hover {
+  color: #000 !important;
+}
+
+.dropdown-menu {
+  z-index: 1050;
+}
+
+.notification-item.notification-unread {
+  background-color: #e0e0e0;
+}
+
+.notification-item.notification-unread:hover {
+  background-color: #d0d0d0;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #343a40;
+  color: white;
+  padding-top: 3rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.floating-action-button {
+  position: fixed;
+  bottom: 20px;
+  left: 120px;
+  background-color: #343a40;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #6c757d;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  z-index: 1050;
+  margin-right: 80px;
+}
+
+.floating-action-button svg {
+  color: white;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.floating-action-button:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.floating-action-button:hover svg {
+  color: white;
+}
