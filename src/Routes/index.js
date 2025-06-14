@@ -8,12 +8,13 @@ import MyCoursesPage from '../Pages/MyCoursesPage';
 import ProfilePage from '../Pages/ProfilePage';
 import SettingsPage from '../Pages/SettingsPage';
 import LogoutPage from '../Pages/LogoutPage';
+import HomePage from '../Pages/HomePage';
 
 const AppRoutes = () => {
     return (
         <Routes>
             <Route path="/" element={<MainLayout />}>
-                <Route index element={<CourseList/>}></Route>
+                <Route index element={<HomePage/>}></Route>
                 <Route path="/courses/:id" element={<CourseDetail />} />
                 <Route path="/my-courses" element={<MyCoursesPage />} />
                 <Route path="/profile" element={<ProfilePage />} />
