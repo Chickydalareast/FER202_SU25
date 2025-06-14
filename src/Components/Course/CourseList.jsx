@@ -21,7 +21,8 @@ function CourseList() {
   return (
     // Sửa đổi inline style padding của div ngoài cùng
     // top=0, right=24px, bottom=0, left=120px
-    <div style={{ padding: "0 24px 0 120px" }}>
+    // <div style={{ padding: "0 24px 0 120px" }}>
+    <div className="mt-5 container py-5 rounded-5" >
       {/* Khóa học miễn phí */}
       <h2 style={{ marginTop: 32, marginBottom: 16 }}>Khóa học miễn phí</h2>
       <div

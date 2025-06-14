@@ -8,8 +8,8 @@ const MainLayout = () => {
     return (
         <div className="App d-flex flex-column min-vh-100">
             <Header />
-            <Sidebar />
-            <main className="flex-grow-1">
+            {/* <Sidebar /> */}
+            <main className="flex-grow-1" >
                <Outlet/>
             </main>
             <Footer />
