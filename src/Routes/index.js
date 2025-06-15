@@ -9,6 +9,8 @@ import ProfilePage from '../Pages/ProfilePage';
 import SettingsPage from '../Pages/SettingsPage';
 import LogoutPage from '../Pages/LogoutPage';
 import HomePage from '../Pages/HomePage';
+import LoginPage from '../Pages/LoginPage';
+
 
 const AppRoutes = () => {
     return (
@@ -20,6 +22,7 @@ const AppRoutes = () => {
                 <Route path="/profile" element={<ProfilePage />} />
                 <Route path="/settings" element={<SettingsPage />} />
                 <Route path="/logout" element={<LogoutPage />} />
+                <Route path="/login" element={<LoginPage />} />
 
             </Route>
             <Route path="*" element={<NotFoundPage/>}></Route>
