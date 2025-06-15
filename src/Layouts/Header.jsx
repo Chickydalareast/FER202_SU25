@@ -61,7 +61,6 @@ const Header = () => {
       </div>
 
       <div className="header-auth-container">
-        <Link to="/signup" className="header-signup-link"> Sign up </Link>
         <Link to="/login" className="header-login-button"> Log in </Link>
       </div>
     </nav>
