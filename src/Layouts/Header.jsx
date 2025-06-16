@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <nav className={`main-header ${isScrolled ? 'scrolled' : ''}`}>
 
-      <Link to="/" className="header-logo">
+      <Link to="/" className="  -logo">
         <img
           src={APP_CONFIG.APP_LOGO}
           width="46"
