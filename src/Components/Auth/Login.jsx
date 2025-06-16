@@ -44,14 +44,13 @@ const StyledWrapper = styled.div`
     --bg-color: #fff;
     --bg-color-alt: #666;
     --main-color: #323232;
-      /* display: flex; */
-      /* flex-direction: column; */
-      /* align-items: center; */
-      display: flex;
+ display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     min-height: calc(100vh - 160px);
+
+    min-height: calc(100vh - 160px); /* nếu có header/footer */
+    padding-top: 80px; /* tránh dính header nếu fixed */
   }
   /* switch card */
   .switch {
